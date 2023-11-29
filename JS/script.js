@@ -42,19 +42,10 @@
         }
 
         for (let i = 0; i < operations.length; i++) {
-            const operationId = `operation_${i}`;
             ul.innerHTML += `<li>
-                <div id="${operationId}" onclick="validar(${i})" class="operation">
+                <div onclick="validar(${i})" class="operation">
                     <img src="${operations[i].foto}" alt="${operations[i].nome}">
                     <span>${operations[i].nome}</span>
                 </div>
-            </li>`;
-
-            if (i === 0) {
-                const somaButton = document.getElementById(operationId);
-                somaButton.addEventListener('click', function () {
-                    validar(i);
-                });
-            }
-        }
-
+            </li>`
+        };
