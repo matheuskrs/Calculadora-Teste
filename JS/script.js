@@ -12,8 +12,8 @@
         let y = 0;
 
         function pedirNumeros() {
-            x = Number(prompt("Qual número deseja somar?"));
-            y = Number(prompt("Qual o outro número que deseja somar?"));
+            x = Number(prompt("Qual número deseja fazer a operação?"));
+            y = Number(prompt("Qual o outro número que deseja fazer a operação?"));
         }
 
         function soma() {
@@ -30,20 +30,20 @@
 
         function validar(i) {
             pedirNumeros()
-            if (i == 0) {
+            if(i == 0) {
                 soma();
             }
             if (i == 1) {
                 multiplicar();
             }
-            if (i == 2) {
+            if (i == 2){
                 subtrair();
             }
         }
 
         for (let i = 0; i < operations.length; i++) {
             ul.innerHTML += `<li>
-                <div onclick="validar(${i})" class="operation">
+                <div onclick="validar(${i})">
                     <img src="${operations[i].foto}" alt="${operations[i].nome}">
                     <span>${operations[i].nome}</span>
                 </div>

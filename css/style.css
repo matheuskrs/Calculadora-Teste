@@ -16,7 +16,7 @@ main{
 }
 html, body{
     min-height:100vh;
-    background-color:rgb(255, 153, 153);
+    background: linear-gradient(320deg, rgb(231, 157, 157), rgb(159, 230, 184), rgb(0, 83, 128));
 }
 
 ul{
@@ -45,7 +45,6 @@ span{
 
 ul img{
     width: 100%;
-
     height: 170px;
     border-radius: 50%;
     display: flex;
@@ -59,9 +58,9 @@ ul img{
 ul li:hover img, ul span:hover img{
     cursor:pointer;
     color: green;
-    background-color:#0095ff;
-    border:#0095ff 5px solid;
+    background-color:red;
+    border:red 5px solid;
 }
 ul li:hover span{
-    color: #0095ff;
+    color: red;
 }
